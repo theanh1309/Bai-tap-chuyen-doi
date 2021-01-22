@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <body>
+    <h1>Ứng dụng</h1>
+    <input type="number" id="chieudai">
+    <button onclick="nut()">Mét sang feet</button>
+    <button onclick="nut2()">Feet sang mét</button> <br>
+    <script>
+        function metsangfeet(met){
+
+            let ketqua1 = met * 3.297;
+
+           return ketqua1;
+        }
+       function nut(){
+           let met =Number(document.getElementById("chieudai").value);
+           let ket_qua= metsangfeet(met);
+           document.write(ket_qua);
+       }
+        function feedsangmet(feet){
+
+            let ketqua2 = feet * 0.3057;
+
+            return ketqua2;
+        }
+        function nut2(){
+            let feet =Number(document.getElementById("chieudai").value);
+            let ket_qua=  feedsangmet(feet);
+            document.write(ket_qua);
+        }
+
+    </script>
+
+    </body>
+</html>
